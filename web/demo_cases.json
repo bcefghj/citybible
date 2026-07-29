@@ -1,0 +1,230 @@
+[
+  {
+    "id": "pos_yuelu",
+    "title": "同一地点·另一时段拍摄",
+    "subtitle": "岳麓书院 · 黄昏光线 + 视角位移 + 平台压缩",
+    "claim": "岳麓书院",
+    "expect": "match",
+    "why": "真实世界里同一个地方的两次拍摄。光线、角度、画质都变了，但建筑的物理结构点没变，所以内点数极高。",
+    "verdict": "match",
+    "confidence": 0.99,
+    "inliers": 2355,
+    "inlier_ratio": 0.9945,
+    "good_matches": 2368,
+    "keypoints_query": 4000,
+    "keypoints_reference": 4000,
+    "elapsed_ms": 369.5,
+    "checkpoints": [
+      {
+        "id": "GEO-01",
+        "name": "特征点内点数",
+        "level": "P0",
+        "value": 2355,
+        "threshold": ">= 22",
+        "passed": true
+      },
+      {
+        "id": "GEO-02",
+        "name": "内点率",
+        "level": "P1",
+        "value": 0.9945,
+        "threshold": ">= 0.12",
+        "passed": true
+      },
+      {
+        "id": "GEO-03",
+        "name": "单应矩阵可解",
+        "level": "P0",
+        "value": true,
+        "threshold": "== True",
+        "passed": true
+      },
+      {
+        "id": "GEO-04",
+        "name": "类文字区域占比（信息性，不参与门禁）",
+        "level": "INFO",
+        "value": 0.0454,
+        "threshold": "n/a（该指标在建筑图上不具区分力，见 VerifyConfig 注释）",
+        "passed": null
+      }
+    ],
+    "best_reference": "yuelu_academy_ref1.jpg",
+    "media": {
+      "candidate": "media/pos_yuelu_cand.jpg",
+      "reference": "media/pos_yuelu_ref.jpg",
+      "evidence": "media/pos_yuelu_evidence.jpg"
+    },
+    "correct": true
+  },
+  {
+    "id": "neg_ai_yuelu",
+    "title": "AI 重新生成的「岳麓书院」",
+    "subtitle": "同一段提示词再生成一次 · 人眼看着很像",
+    "claim": "岳麓书院",
+    "expect": "mismatch",
+    "why": "这是整套系统最重要的一个用例。AI 每次生成的「岳麓书院」都是一座全新的建筑——看着像，但它在几何上和真实的岳麓书院毫无对应关系。内点数与一个完全不相干的地方处在同一量级。发出去就是一次文旅事故。",
+    "verdict": "mismatch",
+    "confidence": 0.715,
+    "inliers": 5,
+    "inlier_ratio": 0.3846,
+    "good_matches": 13,
+    "keypoints_query": 4000,
+    "keypoints_reference": 4000,
+    "elapsed_ms": 326.5,
+    "checkpoints": [
+      {
+        "id": "GEO-01",
+        "name": "特征点内点数",
+        "level": "P0",
+        "value": 5,
+        "threshold": ">= 22",
+        "passed": false
+      },
+      {
+        "id": "GEO-02",
+        "name": "内点率",
+        "level": "P1",
+        "value": 0.3846,
+        "threshold": ">= 0.12",
+        "passed": true
+      },
+      {
+        "id": "GEO-03",
+        "name": "单应矩阵可解",
+        "level": "P0",
+        "value": true,
+        "threshold": "== True",
+        "passed": true
+      },
+      {
+        "id": "GEO-04",
+        "name": "类文字区域占比（信息性，不参与门禁）",
+        "level": "INFO",
+        "value": 0.1506,
+        "threshold": "n/a（该指标在建筑图上不具区分力，见 VerifyConfig 注释）",
+        "passed": null
+      }
+    ],
+    "best_reference": "yuelu_academy_ref2.jpg",
+    "media": {
+      "candidate": "media/neg_ai_yuelu_cand.jpg",
+      "reference": "media/neg_ai_yuelu_ref.jpg",
+      "evidence": "media/neg_ai_yuelu_evidence.jpg"
+    },
+    "correct": true
+  },
+  {
+    "id": "neg_desert",
+    "title": "张冠李戴·完全异景",
+    "subtitle": "西北荒漠烽火台 · 却被声称是天心阁",
+    "claim": "天心阁",
+    "expect": "mismatch",
+    "why": "最直白的一类造假。系统给出接近零的内点数，且在证据图上找不到任何一条几何自洽的连线。",
+    "verdict": "mismatch",
+    "confidence": 0.715,
+    "inliers": 5,
+    "inlier_ratio": 0.4545,
+    "good_matches": 11,
+    "keypoints_query": 3911,
+    "keypoints_reference": 4000,
+    "elapsed_ms": 250.8,
+    "checkpoints": [
+      {
+        "id": "GEO-01",
+        "name": "特征点内点数",
+        "level": "P0",
+        "value": 5,
+        "threshold": ">= 22",
+        "passed": false
+      },
+      {
+        "id": "GEO-02",
+        "name": "内点率",
+        "level": "P1",
+        "value": 0.4545,
+        "threshold": ">= 0.12",
+        "passed": true
+      },
+      {
+        "id": "GEO-03",
+        "name": "单应矩阵可解",
+        "level": "P0",
+        "value": true,
+        "threshold": "== True",
+        "passed": true
+      },
+      {
+        "id": "GEO-04",
+        "name": "类文字区域占比（信息性，不参与门禁）",
+        "level": "INFO",
+        "value": 0.005,
+        "threshold": "n/a（该指标在建筑图上不具区分力，见 VerifyConfig 注释）",
+        "passed": null
+      }
+    ],
+    "best_reference": "tianxin_tower_ref2.jpg",
+    "media": {
+      "candidate": "media/neg_desert_cand.jpg",
+      "reference": "media/neg_desert_ref.jpg",
+      "evidence": "media/neg_desert_evidence.jpg"
+    },
+    "correct": true
+  },
+  {
+    "id": "neg_cross",
+    "title": "跨地标·拿甲地的实照冒充乙地",
+    "subtitle": "太平老街实照 · 却被声称是岳麓书院",
+    "claim": "岳麓书院",
+    "expect": "mismatch",
+    "why": "两张都是真实素材，但不是同一个地方。这一关考的是系统到底有没有在比对场景，而不是在比对「风格像不像」。",
+    "verdict": "mismatch",
+    "confidence": 0.715,
+    "inliers": 5,
+    "inlier_ratio": 0.4167,
+    "good_matches": 12,
+    "keypoints_query": 4000,
+    "keypoints_reference": 4000,
+    "elapsed_ms": 273.1,
+    "checkpoints": [
+      {
+        "id": "GEO-01",
+        "name": "特征点内点数",
+        "level": "P0",
+        "value": 5,
+        "threshold": ">= 22",
+        "passed": false
+      },
+      {
+        "id": "GEO-02",
+        "name": "内点率",
+        "level": "P1",
+        "value": 0.4167,
+        "threshold": ">= 0.12",
+        "passed": true
+      },
+      {
+        "id": "GEO-03",
+        "name": "单应矩阵可解",
+        "level": "P0",
+        "value": true,
+        "threshold": "== True",
+        "passed": true
+      },
+      {
+        "id": "GEO-04",
+        "name": "类文字区域占比（信息性，不参与门禁）",
+        "level": "INFO",
+        "value": 0.0254,
+        "threshold": "n/a（该指标在建筑图上不具区分力，见 VerifyConfig 注释）",
+        "passed": null
+      }
+    ],
+    "best_reference": "yuelu_academy_ref2.jpg",
+    "media": {
+      "candidate": "media/neg_cross_cand.jpg",
+      "reference": "media/neg_cross_ref.jpg",
+      "evidence": "media/neg_cross_evidence.jpg"
+    },
+    "correct": true
+  }
+]

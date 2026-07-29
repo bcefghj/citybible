@@ -1,0 +1,1586 @@
+[
+  {
+    "file": "assets/variant/yuelu_academy_b1_v1_slight.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.02,
+      "gain": 1.05,
+      "bias": 6,
+      "warmth": 0.04,
+      "jpeg_quality": 92
+    },
+    "homography_applied": [
+      [
+        0.9966088511530361,
+        -0.014871145940835863,
+        13.354289054870605
+      ],
+      [
+        -0.004803464114665985,
+        0.9837734502919019,
+        7.685542583465576
+      ],
+      [
+        3.0970511327064133e-06,
+        -8.539018971144153e-06,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/yuelu_academy_b1_v2_moderate.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.045,
+      "gain": 0.92,
+      "bias": -8,
+      "warmth": -0.05,
+      "jpeg_quality": 85
+    },
+    "homography_applied": [
+      [
+        1.038158685585996,
+        -0.009991356949498235,
+        8.972238540649414
+      ],
+      [
+        0.026482807475457778,
+        1.0186496041259037,
+        0.0
+      ],
+      [
+        2.7353959171188788e-05,
+        2.457535916070575e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/yuelu_academy_b1_v3_strong.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.075,
+      "gain": 1.12,
+      "bias": 12,
+      "warmth": 0.08,
+      "jpeg_quality": 78
+    },
+    "homography_applied": [
+      [
+        1.1200724429439486,
+        -0.05225672222723675,
+        46.926536560058594
+      ],
+      [
+        0.06844497921653411,
+        0.9645626908579304,
+        0.0
+      ],
+      [
+        9.719359505376126e-05,
+        -3.946248234083458e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/yuelu_academy_b1_v4_dusk.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.035,
+      "gain": 0.78,
+      "bias": -18,
+      "warmth": 0.14,
+      "jpeg_quality": 88
+    },
+    "homography_applied": [
+      [
+        1.009605375176419,
+        0.02378223846545298,
+        0.0
+      ],
+      [
+        0.010462551486086304,
+        1.003234304592405,
+        0.0
+      ],
+      [
+        1.2324282451718213e-05,
+        3.6016754926560857e-06,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/yuelu_academy_b1_v5_overcast.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.06,
+      "gain": 1.02,
+      "bias": 2,
+      "warmth": -0.1,
+      "jpeg_quality": 74
+    },
+    "homography_applied": [
+      [
+        0.9607264217300141,
+        0.09279507530905474,
+        0.0
+      ],
+      [
+        -0.019245496988296508,
+        1.0201975302831996,
+        30.792795181274414
+      ],
+      [
+        -2.4545986418741156e-05,
+        6.622610177370313e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/yuelu_academy_b1_v6_hard.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.095,
+      "gain": 1.18,
+      "bias": 16,
+      "warmth": 0.06,
+      "jpeg_quality": 68
+    },
+    "homography_applied": [
+      [
+        0.7545968175238928,
+        -0.05623065124375783,
+        50.49512481689453
+      ],
+      [
+        -0.055043387413024905,
+        0.754596817523893,
+        88.06941986083984
+      ],
+      [
+        -0.00012882561265149518,
+        -4.374410048297862e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/yuelu_academy_b2_v1_slight.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.02,
+      "gain": 1.05,
+      "bias": 6,
+      "warmth": 0.04,
+      "jpeg_quality": 92
+    },
+    "homography_applied": [
+      [
+        0.9934709067783907,
+        0.001932136095462497,
+        0.0
+      ],
+      [
+        -0.0003404765576124191,
+        1.005410083732279,
+        0.5447624921798706
+      ],
+      [
+        -4.080683263505877e-06,
+        1.3295297276044981e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/yuelu_academy_b2_v2_moderate.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.045,
+      "gain": 0.92,
+      "bias": -8,
+      "warmth": -0.05,
+      "jpeg_quality": 85
+    },
+    "homography_applied": [
+      [
+        1.0238785313063274,
+        -0.032890107424593716,
+        29.535316467285156
+      ],
+      [
+        -0.008694586753845214,
+        0.9915252259322785,
+        13.911338806152344
+      ],
+      [
+        2.6461315061487932e-05,
+        7.813691020057565e-06,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/yuelu_academy_b2_v3_strong.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.075,
+      "gain": 1.12,
+      "bias": 12,
+      "warmth": 0.08,
+      "jpeg_quality": 78
+    },
+    "homography_applied": [
+      [
+        1.161707254326521,
+        -0.10492889812104154,
+        94.22615051269531
+      ],
+      [
+        0.04986266985645922,
+        0.9679721016988309,
+        0.0
+      ],
+      [
+        0.00013787412399809715,
+        -3.566581102580075e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/yuelu_academy_b2_v4_dusk.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.035,
+      "gain": 0.78,
+      "bias": -18,
+      "warmth": 0.14,
+      "jpeg_quality": 88
+    },
+    "homography_applied": [
+      [
+        0.9925197909230815,
+        -0.0019442764316210518,
+        1.7459602355957031
+      ],
+      [
+        -0.015973148345947267,
+        0.9923726845790157,
+        25.557037353515625
+      ],
+      [
+        -3.9931149560444645e-06,
+        2.3198927715477278e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/yuelu_academy_b2_v5_overcast.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.06,
+      "gain": 1.02,
+      "bias": 2,
+      "warmth": -0.1,
+      "jpeg_quality": 74
+    },
+    "homography_applied": [
+      [
+        0.9908449109196539,
+        0.02663095804800216,
+        0.0
+      ],
+      [
+        0.007010689330488709,
+        0.9933003301900395,
+        0.0
+      ],
+      [
+        4.933427392647973e-06,
+        -2.3406990023849513e-06,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/yuelu_academy_b2_v6_hard.jpg",
+    "landmark_id": "yuelu_academy",
+    "landmark": "岳麓书院",
+    "derived_from": "assets/reference/yuelu_academy_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.095,
+      "gain": 1.18,
+      "bias": 16,
+      "warmth": 0.06,
+      "jpeg_quality": 68
+    },
+    "homography_applied": [
+      [
+        0.9871316866079968,
+        0.007517817264629652,
+        0.0
+      ],
+      [
+        0.03595589670581707,
+        0.9736115184453503,
+        0.0
+      ],
+      [
+        -8.042695870001967e-06,
+        5.6284844469088365e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b1_v1_slight.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.02,
+      "gain": 1.05,
+      "bias": 6,
+      "warmth": 0.04,
+      "jpeg_quality": 92
+    },
+    "homography_applied": [
+      [
+        0.9583506177779484,
+        -0.02184393358124391,
+        19.61585235595703
+      ],
+      [
+        -0.006845753192901611,
+        0.9590015754289226,
+        10.953205108642578
+      ],
+      [
+        -1.8368421562236597e-05,
+        -1.2927561326836238e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b1_v2_moderate.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.045,
+      "gain": 0.92,
+      "bias": -8,
+      "warmth": -0.05,
+      "jpeg_quality": 85
+    },
+    "homography_applied": [
+      [
+        0.9733362034900843,
+        0.04236813177946213,
+        0.0
+      ],
+      [
+        -0.029328887462615968,
+        0.9458644416972954,
+        46.92621994018555
+      ],
+      [
+        -6.28433681154566e-07,
+        -2.0926377047275175e-06,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b1_v3_strong.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.075,
+      "gain": 1.12,
+      "bias": 12,
+      "warmth": 0.08,
+      "jpeg_quality": 78
+    },
+    "homography_applied": [
+      [
+        0.9942112908905979,
+        -0.03703370126159258,
+        33.256263732910156
+      ],
+      [
+        0.016054280726074902,
+        0.9519180944399241,
+        0.0
+      ],
+      [
+        2.6433247781671096e-05,
+        -5.354332467714466e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b1_v4_dusk.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.035,
+      "gain": 0.78,
+      "bias": -18,
+      "warmth": 0.14,
+      "jpeg_quality": 88
+    },
+    "homography_applied": [
+      [
+        1.0390534324650726,
+        -0.017524521706629975,
+        15.737020492553711
+      ],
+      [
+        0.012593882281873227,
+        0.9727137420703496,
+        0.0
+      ],
+      [
+        4.146230649670191e-05,
+        -3.038558789493365e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b1_v5_overcast.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.06,
+      "gain": 1.02,
+      "bias": 2,
+      "warmth": -0.1,
+      "jpeg_quality": 74
+    },
+    "homography_applied": [
+      [
+        0.7917826019807076,
+        0.008102336168000372,
+        0.0
+      ],
+      [
+        -0.03545745372772217,
+        0.7963300381549978,
+        56.73192596435547
+      ],
+      [
+        -9.72767305083294e-05,
+        -5.348239758538433e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b1_v6_hard.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.095,
+      "gain": 1.18,
+      "bias": 16,
+      "warmth": 0.06,
+      "jpeg_quality": 68
+    },
+    "homography_applied": [
+      [
+        0.845798319315208,
+        -0.021369084483531108,
+        19.189437866210938
+      ],
+      [
+        -0.03518665313720703,
+        0.845798319315208,
+        56.29864501953125
+      ],
+      [
+        -8.17747169586903e-05,
+        -2.60157389208101e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b2_v1_slight.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.02,
+      "gain": 1.05,
+      "bias": 6,
+      "warmth": 0.04,
+      "jpeg_quality": 92
+    },
+    "homography_applied": [
+      [
+        1.0137116863451454,
+        -0.0023428052995677516,
+        2.103839159011841
+      ],
+      [
+        -0.0030981674790382385,
+        0.9880556610659924,
+        4.957067966461182
+      ],
+      [
+        1.2584940655775466e-05,
+        -7.153918378725313e-06,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b2_v2_moderate.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.045,
+      "gain": 0.92,
+      "bias": -8,
+      "warmth": -0.05,
+      "jpeg_quality": 85
+    },
+    "homography_applied": [
+      [
+        0.9828545887099169,
+        0.017443939352926124,
+        0.0
+      ],
+      [
+        -0.02433556318283081,
+        0.9652441006529056,
+        38.9369010925293
+      ],
+      [
+        -9.974127219501264e-06,
+        9.580933972101414e-06,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b2_v3_strong.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.075,
+      "gain": 1.12,
+      "bias": 12,
+      "warmth": 0.08,
+      "jpeg_quality": 78
+    },
+    "homography_applied": [
+      [
+        0.8949464635484209,
+        0.0070406064253239545,
+        0.0
+      ],
+      [
+        -0.06327860355377198,
+        0.8824191412568575,
+        101.24576568603516
+      ],
+      [
+        -6.0166861795888036e-05,
+        -5.384206260518085e-06,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b2_v4_dusk.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.035,
+      "gain": 0.78,
+      "bias": -18,
+      "warmth": 0.14,
+      "jpeg_quality": 88
+    },
+    "homography_applied": [
+      [
+        0.9880899474471248,
+        0.055825825881280704,
+        0.0
+      ],
+      [
+        0.006346981457851971,
+        1.0081135392914087,
+        0.0
+      ],
+      [
+        3.8740011093047e-06,
+        1.4725824552456631e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b2_v5_overcast.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.06,
+      "gain": 1.02,
+      "bias": 2,
+      "warmth": -0.1,
+      "jpeg_quality": 74
+    },
+    "homography_applied": [
+      [
+        0.9496828530469363,
+        0.10803696507398686,
+        0.0
+      ],
+      [
+        0.013438165563040847,
+        0.9863753202950841,
+        0.0
+      ],
+      [
+        -2.6939814465713782e-05,
+        5.949031496642932e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/orange_isle_b2_v6_hard.jpg",
+    "landmark_id": "orange_isle",
+    "landmark": "橘子洲",
+    "derived_from": "assets/reference/orange_isle_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.095,
+      "gain": 1.18,
+      "bias": 16,
+      "warmth": 0.06,
+      "jpeg_quality": 68
+    },
+    "homography_applied": [
+      [
+        0.901268192646298,
+        -0.055476900198411845,
+        49.81825637817383
+      ],
+      [
+        0.037337288134751526,
+        0.834742957662331,
+        0.0
+      ],
+      [
+        -4.1579452383151904e-05,
+        -3.586267654861797e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b1_v1_slight.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.02,
+      "gain": 1.05,
+      "bias": 6,
+      "warmth": 0.04,
+      "jpeg_quality": 92
+    },
+    "homography_applied": [
+      [
+        0.9837450625269484,
+        -0.015263331228481369,
+        13.70647144317627
+      ],
+      [
+        -0.011752598285675049,
+        0.9758225768333509,
+        18.804157257080078
+      ],
+      [
+        -4.805245513166467e-06,
+        -3.605102090975109e-06,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b1_v2_moderate.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.045,
+      "gain": 0.92,
+      "bias": -8,
+      "warmth": -0.05,
+      "jpeg_quality": 85
+    },
+    "homography_applied": [
+      [
+        0.9038680708750486,
+        -0.04094505310058593,
+        36.76865768432617
+      ],
+      [
+        -0.021683971881866455,
+        0.9038680708750486,
+        34.69435501098633
+      ],
+      [
+        -2.8021117602904718e-05,
+        -5.7124878574948576e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b1_v3_strong.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.075,
+      "gain": 1.12,
+      "bias": 12,
+      "warmth": 0.08,
+      "jpeg_quality": 78
+    },
+    "homography_applied": [
+      [
+        0.8764593909127594,
+        0.020919344396843672,
+        0.0
+      ],
+      [
+        -0.01830918073654175,
+        0.8882003729554878,
+        29.294689178466797
+      ],
+      [
+        -6.399722454743851e-05,
+        -1.0472235822506112e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b1_v4_dusk.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.035,
+      "gain": 0.78,
+      "bias": -18,
+      "warmth": 0.14,
+      "jpeg_quality": 88
+    },
+    "homography_applied": [
+      [
+        0.9829706607976267,
+        -0.04387774393128394,
+        39.40221405029297
+      ],
+      [
+        -0.01013048529624939,
+        0.93750856813125,
+        16.208776473999023
+      ],
+      [
+        1.7132643889481682e-05,
+        -4.9489498246708174e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b1_v5_overcast.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.06,
+      "gain": 1.02,
+      "bias": 2,
+      "warmth": -0.1,
+      "jpeg_quality": 74
+    },
+    "homography_applied": [
+      [
+        0.8895957148621184,
+        0.06397607181438483,
+        0.0
+      ],
+      [
+        -0.0028560215234756468,
+        0.9255022851679419,
+        4.569634437561035
+      ],
+      [
+        -5.458399630505759e-05,
+        1.4294743046808487e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b1_v6_hard.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.095,
+      "gain": 1.18,
+      "bias": 16,
+      "warmth": 0.06,
+      "jpeg_quality": 68
+    },
+    "homography_applied": [
+      [
+        0.8948945574061381,
+        0.07361165375023294,
+        0.0
+      ],
+      [
+        -0.0524433708190918,
+        0.8648724973643347,
+        83.90939331054688
+      ],
+      [
+        -1.3814814778504777e-05,
+        -4.642226980059691e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b2_v1_slight.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.02,
+      "gain": 1.05,
+      "bias": 6,
+      "warmth": 0.04,
+      "jpeg_quality": 92
+    },
+    "homography_applied": [
+      [
+        0.971103039812596,
+        -0.017482616322608727,
+        15.699389457702637
+      ],
+      [
+        -0.009369767308235168,
+        0.9778040318576882,
+        14.99162769317627
+      ],
+      [
+        -1.1928026110212418e-05,
+        -3.464505975469911e-06,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b2_v2_moderate.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.045,
+      "gain": 0.92,
+      "bias": -8,
+      "warmth": -0.05,
+      "jpeg_quality": 85
+    },
+    "homography_applied": [
+      [
+        0.9699660736361269,
+        -0.024620455463638818,
+        22.109169006347656
+      ],
+      [
+        -0.011408045291900634,
+        0.9312162328506622,
+        18.252872467041016
+      ],
+      [
+        1.1514813862963634e-05,
+        -5.3961724437210483e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b2_v3_strong.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.075,
+      "gain": 1.12,
+      "bias": 12,
+      "warmth": 0.08,
+      "jpeg_quality": 78
+    },
+    "homography_applied": [
+      [
+        0.9581611831095761,
+        0.05208025376052249,
+        0.0
+      ],
+      [
+        -0.02316035032272339,
+        1.0129218446254642,
+        37.05656051635742
+      ],
+      [
+        -2.6149260556514935e-05,
+        6.0980692111234076e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b2_v4_dusk.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.035,
+      "gain": 0.78,
+      "bias": -18,
+      "warmth": 0.14,
+      "jpeg_quality": 88
+    },
+    "homography_applied": [
+      [
+        1.013675712849645,
+        0.0067792363738911204,
+        0.0
+      ],
+      [
+        0.03613811268275809,
+        0.9530919397851898,
+        0.0
+      ],
+      [
+        1.8468872868016246e-05,
+        -1.34405760850051e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b2_v5_overcast.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.06,
+      "gain": 1.02,
+      "bias": 2,
+      "warmth": -0.1,
+      "jpeg_quality": 74
+    },
+    "homography_applied": [
+      [
+        0.9986452017142777,
+        0.02219581137133993,
+        0.0
+      ],
+      [
+        0.00849424367764057,
+        0.9790144568750347,
+        0.0
+      ],
+      [
+        2.0055089982129675e-05,
+        -2.3369201698179537e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/tianxin_tower_b2_v6_hard.jpg",
+    "landmark_id": "tianxin_tower",
+    "landmark": "天心阁",
+    "derived_from": "assets/reference/tianxin_tower_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.095,
+      "gain": 1.18,
+      "bias": 16,
+      "warmth": 0.06,
+      "jpeg_quality": 68
+    },
+    "homography_applied": [
+      [
+        0.8799463316835192,
+        -0.011900138217781594,
+        10.686324119567871
+      ],
+      [
+        -0.011793721914291382,
+        0.8799463316835193,
+        18.86995506286621
+      ],
+      [
+        -6.434769742658213e-05,
+        -1.9039367966535966e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b1_v1_slight.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.02,
+      "gain": 1.05,
+      "bias": 6,
+      "warmth": 0.04,
+      "jpeg_quality": 92
+    },
+    "homography_applied": [
+      [
+        0.9729228088557802,
+        -0.009972497986791394,
+        8.955303192138672
+      ],
+      [
+        0.0012604013064723362,
+        0.9706770312447282,
+        0.0
+      ],
+      [
+        -1.2550692837156318e-05,
+        -7.790819965491481e-06,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b1_v2_moderate.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.045,
+      "gain": 0.92,
+      "bias": -8,
+      "warmth": -0.05,
+      "jpeg_quality": 85
+    },
+    "homography_applied": [
+      [
+        1.0254792124666643,
+        -0.027840117303725074,
+        25.000425338745117
+      ],
+      [
+        0.003823499251104886,
+        0.9834351024189307,
+        0.0
+      ],
+      [
+        2.6277568779833463e-05,
+        -1.8446433831925712e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b1_v3_strong.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.075,
+      "gain": 1.12,
+      "bias": 12,
+      "warmth": 0.08,
+      "jpeg_quality": 78
+    },
+    "homography_applied": [
+      [
+        0.9743610029133026,
+        -0.043248658721855855,
+        38.83729553222656
+      ],
+      [
+        -0.014334867000579834,
+        0.936997245868719,
+        22.935787200927734
+      ],
+      [
+        7.389285254004005e-06,
+        -4.171698607249859e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b1_v4_dusk.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.035,
+      "gain": 0.78,
+      "bias": -18,
+      "warmth": 0.14,
+      "jpeg_quality": 88
+    },
+    "homography_applied": [
+      [
+        1.021069924737845,
+        0.015128962118708499,
+        0.0
+      ],
+      [
+        -0.0009869387745857238,
+        1.0160267351727437,
+        1.5791020393371582
+      ],
+      [
+        1.316865399143583e-05,
+        1.980534598595862e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b1_v5_overcast.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.06,
+      "gain": 1.02,
+      "bias": 2,
+      "warmth": -0.1,
+      "jpeg_quality": 74
+    },
+    "homography_applied": [
+      [
+        1.0258591165051676,
+        -0.0110560706038783,
+        9.928351402282715
+      ],
+      [
+        0.020339338104129072,
+        0.9883191041187505,
+        0.0
+      ],
+      [
+        2.346250774151067e-05,
+        -1.3007679155066393e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b1_v6_hard.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref1.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.095,
+      "gain": 1.18,
+      "bias": 16,
+      "warmth": 0.06,
+      "jpeg_quality": 68
+    },
+    "homography_applied": [
+      [
+        0.7862079581883183,
+        0.04058299819972352,
+        0.0
+      ],
+      [
+        -0.07328870296478271,
+        0.8089851659279133,
+        117.26192474365234
+      ],
+      [
+        -0.00010221529722657453,
+        -3.05905996765786e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b2_v1_slight.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.02,
+      "gain": 1.05,
+      "bias": 6,
+      "warmth": 0.04,
+      "jpeg_quality": 92
+    },
+    "homography_applied": [
+      [
+        0.9409508649569485,
+        -0.022106293846079397,
+        19.851451873779297
+      ],
+      [
+        -0.0071211689710617065,
+        0.9409508649569485,
+        11.39387035369873
+      ],
+      [
+        -2.480689814843011e-05,
+        -2.155690201064963e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b2_v2_moderate.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.045,
+      "gain": 0.92,
+      "bias": -8,
+      "warmth": -0.05,
+      "jpeg_quality": 85
+    },
+    "homography_applied": [
+      [
+        0.8934060428343956,
+        0.024377299323329063,
+        0.0
+      ],
+      [
+        -0.043245677947998044,
+        0.907087802079614,
+        69.19308471679688
+      ],
+      [
+        -5.802462908780958e-05,
+        -8.105944308525947e-08,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b2_v3_strong.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.075,
+      "gain": 1.12,
+      "bias": 12,
+      "warmth": 0.08,
+      "jpeg_quality": 78
+    },
+    "homography_applied": [
+      [
+        1.029181114163365,
+        0.08512594243625185,
+        0.0
+      ],
+      [
+        0.04378404891163948,
+        0.9989463809162646,
+        0.0
+      ],
+      [
+        4.0672390296147194e-05,
+        1.3231876260440744e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b2_v4_dusk.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.035,
+      "gain": 0.78,
+      "bias": -18,
+      "warmth": 0.14,
+      "jpeg_quality": 88
+    },
+    "homography_applied": [
+      [
+        0.9294808138201813,
+        0.01201505271541712,
+        0.0
+      ],
+      [
+        -0.014717609882354736,
+        0.9362242621567091,
+        23.548175811767578
+      ],
+      [
+        -3.337218265841001e-05,
+        -1.1559293529882926e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b2_v5_overcast.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.06,
+      "gain": 1.02,
+      "bias": 2,
+      "warmth": -0.1,
+      "jpeg_quality": 74
+    },
+    "homography_applied": [
+      [
+        0.9146052299268201,
+        -0.06199921266007794,
+        55.67529296875
+      ],
+      [
+        0.000867524833923022,
+        0.9130595286637058,
+        0.0
+      ],
+      [
+        -8.66759545912713e-06,
+        -7.965102153516302e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  },
+  {
+    "file": "assets/variant/taiping_street_b2_v6_hard.jpg",
+    "landmark_id": "taiping_street",
+    "landmark": "太平老街",
+    "derived_from": "assets/reference/taiping_street_ref2.jpg",
+    "truth": "match",
+    "kind": "geometric_photometric_variant",
+    "params": {
+      "perspective_strength": 0.095,
+      "gain": 1.18,
+      "bias": 16,
+      "warmth": 0.06,
+      "jpeg_quality": 68
+    },
+    "homography_applied": [
+      [
+        1.0553813824055447,
+        0.01699512070041287,
+        0.0
+      ],
+      [
+        0.04565758503094851,
+        0.9768381957261038,
+        0.0
+      ],
+      [
+        5.5051061357842234e-05,
+        -2.5792655093425693e-05,
+        1.0
+      ]
+    ],
+    "note": "同一物理场景的受控视角/光照变换（HPatches 式构造）"
+  }
+]

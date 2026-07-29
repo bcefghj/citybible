@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 500" width="940" height="500" font-family="Noto Sans CJK SC,PingFang SC,Microsoft YaHei,sans-serif">
+<rect width="940" height="500" fill="#f6f2ea"/>
+<text x="470" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#1e1c1a">城设 CityBible · 系统架构</text>
+<text x="470" y="55" text-anchor="middle" font-size="12" fill="#8a8178">主判定零大模型 · 结论绑定证据 · 三种对外形态一份实现</text>
+<g stroke="#ddd4c4" stroke-width="1.2" fill="#fff">
+<rect x="30" y="86" width="200" height="118" rx="3"/><rect x="30" y="222" width="200" height="96" rx="3"/>
+<rect x="290" y="86" width="230" height="232" rx="3" stroke="#a8322a" stroke-width="2"/>
+<rect x="580" y="86" width="150" height="106" rx="3"/><rect x="580" y="212" width="150" height="106" rx="3"/>
+<rect x="790" y="86" width="120" height="232" rx="3"/>
+<rect x="30" y="360" width="880" height="112" rx="3"/>
+</g>
+<text x="130" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#1e1c1a">城市素材资产库</text>
+<text x="46" y="132" font-size="11" fill="#514c45">· 多方位 / 多时段参考照</text>
+<text x="46" y="152" font-size="11" fill="#514c45">· 来源与授权状态登记</text>
+<text x="46" y="172" font-size="11" fill="#514c45">· 地方志 / 非遗档案</text>
+<text x="46" y="192" font-size="11" fill="#8a8178">演示版：长沙 4 地标 × 2 张</text>
+<text x="130" y="244" text-anchor="middle" font-size="13" font-weight="700" fill="#1e1c1a">待验内容</text>
+<text x="46" y="268" font-size="11" fill="#514c45">· AI 生成图 / 短视频帧</text>
+<text x="46" y="288" font-size="11" fill="#514c45">· 声称的地点名</text>
+<text x="46" y="308" font-size="11" fill="#514c45">· 上传或 API 传入</text>
+<text x="405" y="110" text-anchor="middle" font-size="14" font-weight="700" fill="#a8322a">地理真实性判定引擎</text>
+<text x="306" y="136" font-size="11.5" font-weight="700" fill="#1e1c1a">轨一 · 主判定（零 LLM）</text>
+<text x="306" y="156" font-size="10.5" fill="#514c45">ORB/AKAZE/SIFT 特征点</text>
+<text x="306" y="174" font-size="10.5" fill="#514c45">→ Lowe's ratio test</text>
+<text x="306" y="192" font-size="10.5" fill="#514c45">→ RANSAC 单应矩阵校验</text>
+<text x="306" y="210" font-size="10.5" fill="#514c45">→ 内点数 / 内点率</text>
+<line x1="306" y1="224" x2="504" y2="224" stroke="#ddd4c4"/>
+<text x="306" y="244" font-size="11.5" font-weight="700" fill="#1e1c1a">轨二 · 类文字信号</text>
+<text x="306" y="262" font-size="10.5" fill="#b5822b">实测不具区分力，已降级为只记录</text>
+<line x1="306" y1="274" x2="504" y2="274" stroke="#ddd4c4"/>
+<text x="306" y="294" font-size="11.5" font-weight="700" fill="#1e1c1a">轨三 · 语义补充</text>
+<text x="306" y="310" font-size="10.5" fill="#514c45">仅灰区调用多模态模型</text>
+<text x="655" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#1e1c1a">四态门禁</text>
+<text x="596" y="134" font-size="11" fill="#2f6f5e">✓ match　　通过</text>
+<text x="596" y="154" font-size="11" fill="#a8322a">✕ mismatch　打回</text>
+<text x="596" y="174" font-size="11" fill="#b5822b">⚠ needs_human_review</text>
+<text x="655" y="236" text-anchor="middle" font-size="13" font-weight="700" fill="#1e1c1a">证据链</text>
+<text x="596" y="260" font-size="11" fill="#514c45">· 匹配点连线图</text>
+<text x="596" y="280" font-size="11" fill="#514c45">· 检查点逐条结论</text>
+<text x="596" y="300" font-size="11" fill="#514c45">· 单应矩阵 / 内点数</text>
+<text x="850" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#1e1c1a">对外形态</text>
+<text x="802" y="140" font-size="11" fill="#514c45">REST /api</text>
+<text x="802" y="164" font-size="11" fill="#514c45">MCP /mcp</text>
+<text x="802" y="188" font-size="11" fill="#514c45">CLI citybible</text>
+<text x="802" y="212" font-size="11" fill="#514c45">展示页 web</text>
+<text x="802" y="248" font-size="10" fill="#8a8178">Streamable</text>
+<text x="802" y="264" font-size="10" fill="#8a8178">HTTP 2025-11-25</text>
+<text x="470" y="384" text-anchor="middle" font-size="13" font-weight="700" fill="#1e1c1a">裁判校准器 —— 凭什么信它判得准</text>
+<text x="60" y="410" font-size="11" fill="#514c45">POS 同一物理场景（受控视角/光照变换，HPatches 式构造） 48 条</text>
+<text x="60" y="430" font-size="11" fill="#514c45">NEG-A 完全异景 4 条　NEG-C 跨地标冒充 12 条</text>
+<text x="60" y="450" font-size="11" fill="#a8322a">NEG-B AI 重新生成的同名地点 4 条 —— 最难也最关键的一类</text>
+<text x="560" y="410" font-size="11" fill="#514c45">输出：混淆矩阵 / 查准率 / 查全率 / F1 / 误杀率 / 漏放率</text>
+<text x="560" y="430" font-size="11" fill="#514c45">三检测器均 68/68，F1 = 1.000</text>
+<text x="560" y="450" font-size="11" fill="#2f6f5e">正负内点数相差 200 倍，阈值不敏感</text>
+<g stroke="#8a8178" stroke-width="1.4" fill="none" marker-end="url(#a)">
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#8a8178"/></marker></defs>
+<path d="M230,145 L288,175"/><path d="M230,268 L288,225"/><path d="M520,140 L578,140"/><path d="M520,250 L578,250"/>
+<path d="M730,140 L788,150"/><path d="M730,250 L788,230"/><path d="M405,320 L405,358"/>
+</g>
+</svg>

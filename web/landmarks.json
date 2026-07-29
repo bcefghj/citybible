@@ -1,0 +1,26 @@
+[
+  {
+    "id": "yuelu_academy",
+    "name": "岳麓书院",
+    "img": "media/lm_yuelu_academy.jpg",
+    "refs": 2
+  },
+  {
+    "id": "orange_isle",
+    "name": "橘子洲",
+    "img": "media/lm_orange_isle.jpg",
+    "refs": 2
+  },
+  {
+    "id": "tianxin_tower",
+    "name": "天心阁",
+    "img": "media/lm_tianxin_tower.jpg",
+    "refs": 2
+  },
+  {
+    "id": "taiping_street",
+    "name": "太平老街",
+    "img": "media/lm_taiping_street.jpg",
+    "refs": 2
+  }
+]

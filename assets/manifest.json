@@ -1,0 +1,90 @@
+{
+  "yuelu_academy": {
+    "id": "yuelu_academy",
+    "name": "岳麓书院",
+    "reference": [
+      "assets/reference/yuelu_academy_ref1.jpg",
+      "assets/reference/yuelu_academy_ref2.jpg"
+    ],
+    "candidate": [
+      {
+        "file": "assets/candidate/yuelu_academy_match.jpg",
+        "truth": "match",
+        "claim": "岳麓书院",
+        "note": "同一地点的另一视角"
+      },
+      {
+        "file": "assets/candidate/yuelu_academy_mismatch.jpg",
+        "truth": "mismatch",
+        "claim": "岳麓书院",
+        "note": "张冠李戴：实为其他地点，却被声称是岳麓书院"
+      }
+    ]
+  },
+  "orange_isle": {
+    "id": "orange_isle",
+    "name": "橘子洲",
+    "reference": [
+      "assets/reference/orange_isle_ref1.jpg",
+      "assets/reference/orange_isle_ref2.jpg"
+    ],
+    "candidate": [
+      {
+        "file": "assets/candidate/orange_isle_match.jpg",
+        "truth": "match",
+        "claim": "橘子洲",
+        "note": "同一地点的另一视角"
+      },
+      {
+        "file": "assets/candidate/orange_isle_mismatch.jpg",
+        "truth": "mismatch",
+        "claim": "橘子洲",
+        "note": "张冠李戴：实为其他地点，却被声称是橘子洲"
+      }
+    ]
+  },
+  "tianxin_tower": {
+    "id": "tianxin_tower",
+    "name": "天心阁",
+    "reference": [
+      "assets/reference/tianxin_tower_ref1.jpg",
+      "assets/reference/tianxin_tower_ref2.jpg"
+    ],
+    "candidate": [
+      {
+        "file": "assets/candidate/tianxin_tower_match.jpg",
+        "truth": "match",
+        "claim": "天心阁",
+        "note": "同一地点的另一视角"
+      },
+      {
+        "file": "assets/candidate/tianxin_tower_mismatch.jpg",
+        "truth": "mismatch",
+        "claim": "天心阁",
+        "note": "张冠李戴：实为其他地点，却被声称是天心阁"
+      }
+    ]
+  },
+  "taiping_street": {
+    "id": "taiping_street",
+    "name": "太平老街",
+    "reference": [
+      "assets/reference/taiping_street_ref1.jpg",
+      "assets/reference/taiping_street_ref2.jpg"
+    ],
+    "candidate": [
+      {
+        "file": "assets/candidate/taiping_street_match.jpg",
+        "truth": "match",
+        "claim": "太平老街",
+        "note": "同一地点的另一视角"
+      },
+      {
+        "file": "assets/candidate/taiping_street_mismatch.jpg",
+        "truth": "mismatch",
+        "claim": "太平老街",
+        "note": "张冠李戴：实为其他地点，却被声称是太平老街"
+      }
+    ]
+  }
+}

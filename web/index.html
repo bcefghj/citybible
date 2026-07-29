@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>城设 CityBible · 城市文旅内容的地理真实性验真门禁</title>
+<meta name="description" content="给每一座城市写一本设定集。真实素材资产库 + 地理真实性验真门禁 + 到店归因。">
+<meta property="og:title" content="城设 CityBible">
+<meta property="og:description" content="AI 每次生成的「岳麓书院」都是一座不同的建筑。我们能验出这一点。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23f5f1e8'/><path d='M6 24V10l10-5 10 5v14' fill='none' stroke='%23a8322a' stroke-width='2.4'/><circle cx='16' cy='17' r='3' fill='%23a8322a'/></svg>">
+<style>
+:root{
+  --paper:#f6f2ea; --paper2:#efe9dd; --ink:#1e1c1a; --ink2:#514c45;
+  --ink3:#8a8178; --cinnabar:#a8322a; --cinnabar-l:#c9553f;
+  --jade:#2f6f5e; --line:#ddd4c4; --amber:#b5822b;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  line-height:1.75;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:radial-gradient(circle at 20% 30%,rgba(0,0,0,.018) 0 1px,transparent 1px),
+                   radial-gradient(circle at 70% 60%,rgba(0,0,0,.015) 0 1px,transparent 1px);
+  background-size:23px 23px,31px 31px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+section{padding:76px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+h2{font-size:29px;margin:0 0 8px;letter-spacing:.5px;font-weight:700}
+h2 .num{color:var(--cinnabar);font-family:var(--mono);font-size:16px;margin-right:12px;font-weight:400}
+.lede{color:var(--ink2);font-size:16.5px;max-width:760px;margin:0 0 34px}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:50;background:rgba(246,242,234,.9);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:26px;height:56px}
+nav b{font-size:16px;letter-spacing:2px}
+nav b em{font-style:normal;color:var(--cinnabar)}
+nav a{color:var(--ink2);text-decoration:none;font-size:13.5px;white-space:nowrap}
+nav a:hover{color:var(--cinnabar)}
+nav .sp{flex:1}
+.cta{background:var(--cinnabar);color:#fff!important;padding:7px 15px;border-radius:3px;font-size:13px}
+
+/* ---------- hero ---------- */
+.hero{padding:78px 0 66px}
+.seal{display:inline-block;border:2px solid var(--cinnabar);color:var(--cinnabar);
+  padding:5px 11px;font-size:12px;letter-spacing:3px;margin-bottom:26px;font-family:var(--mono)}
+h1{font-size:58px;line-height:1.12;margin:0 0 6px;letter-spacing:3px;font-weight:800}
+h1 small{display:block;font-size:17px;letter-spacing:7px;color:var(--ink3);
+  font-weight:400;margin-top:12px;font-family:var(--mono)}
+.tldr{font-size:20px;color:var(--ink2);margin:28px 0 0;max-width:730px;line-height:1.7}
+.tldr b{color:var(--ink);border-bottom:2px solid var(--cinnabar);padding-bottom:1px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(186px,1fr));gap:14px;margin:42px 0 30px}
+.kpi{background:var(--paper2);border:1px solid var(--line);border-left:3px solid var(--cinnabar);padding:16px 18px}
+.kpi .v{font-size:33px;font-weight:800;font-family:var(--mono);letter-spacing:-1px;line-height:1.1}
+.kpi .l{font-size:12.5px;color:var(--ink3);margin-top:5px}
+.btns{display:flex;gap:11px;flex-wrap:wrap;margin-top:8px}
+.btn{border:1px solid var(--ink);padding:9px 17px;text-decoration:none;color:var(--ink);
+  font-size:14px;border-radius:3px;transition:.15s}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.pri{background:var(--cinnabar);border-color:var(--cinnabar);color:#fff}
+.btn.pri:hover{background:#8d2822}
+
+/* ---------- problem ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;
+  border:1px solid var(--line);background:var(--paper2)}
+.stat{padding:22px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat .n{font-size:30px;font-weight:800;font-family:var(--mono);color:var(--cinnabar)}
+.stat .d{font-size:13px;color:var(--ink2);margin-top:6px;line-height:1.6}
+.quote{border-left:3px solid var(--cinnabar);padding:4px 0 4px 20px;margin:30px 0;
+  font-size:17px;color:var(--ink2);font-style:italic}
+
+/* ---------- pipeline ---------- */
+.pipe{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px;margin-top:12px}
+.node{border:1px solid var(--line);background:#fff;padding:18px;position:relative}
+.node .t{font-family:var(--mono);font-size:11px;color:var(--cinnabar);letter-spacing:1.5px}
+.node h4{margin:8px 0 7px;font-size:16.5px}
+.node p{margin:0;font-size:13.5px;color:var(--ink2);line-height:1.65}
+.node.hi{border-color:var(--cinnabar);box-shadow:0 2px 0 var(--cinnabar)}
+.tagz{display:inline-block;font-size:11px;font-family:var(--mono);padding:2px 7px;
+  border:1px solid var(--jade);color:var(--jade);margin-top:10px}
+
+/* ---------- demo ---------- */
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:22px}
+.chip{border:1px solid var(--line);background:#fff;padding:9px 15px;cursor:pointer;
+  font-size:13.5px;border-radius:3px;transition:.15s;user-select:none}
+.chip:hover{border-color:var(--ink3)}
+.chip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.stage{border:1px solid var(--line);background:#fff}
+.stage-head{padding:20px 22px;border-bottom:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap}
+.stage-head h3{margin:0 0 4px;font-size:19px}
+.stage-head .sub{font-size:13.5px;color:var(--ink3)}
+.verdict{font-family:var(--mono);font-size:14px;padding:8px 16px;border-radius:3px;
+  white-space:nowrap;font-weight:700;letter-spacing:1px;opacity:0;transform:translateY(-4px);
+  transition:.35s}
+.verdict.show{opacity:1;transform:none}
+.verdict.match{background:#e7f0ec;color:var(--jade);border:1.5px solid var(--jade)}
+.verdict.mismatch{background:#faeceb;color:var(--cinnabar);border:1.5px solid var(--cinnabar)}
+.imgs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.imgs figure{margin:0;background:#fff;position:relative;overflow:hidden}
+.imgs img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+.imgs figcaption{position:absolute;top:0;left:0;background:rgba(30,28,26,.82);color:#fff;
+  font-size:11.5px;padding:5px 10px;font-family:var(--mono);letter-spacing:.5px}
+.scan{position:absolute;left:0;right:0;height:2px;background:var(--cinnabar);
+  box-shadow:0 0 14px 3px rgba(168,50,42,.55);top:-4px;opacity:0}
+.scanning .scan{animation:scan 1.15s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes scan{0%{top:0;opacity:1}92%{opacity:1}100%{top:100%;opacity:0}}
+.evi{padding:0;border-top:1px solid var(--line);background:#fbf9f5}
+.evi img{width:100%;display:block}
+.evi .cap{padding:11px 22px;font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);
+  font-family:var(--mono)}
+.checks{padding:20px 22px;border-top:1px solid var(--line)}
+.ck{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line);
+  font-size:14px;opacity:0;transform:translateX(-8px)}
+.ck.on{opacity:1;transform:none;transition:.3s}
+.ck:last-child{border-bottom:0}
+.ck .dot{width:9px;height:9px;border-radius:50%;flex:none}
+.ck .dot.p{background:var(--jade)}.ck .dot.f{background:var(--cinnabar)}.ck .dot.i{background:var(--ink3)}
+.ck .id{font-family:var(--mono);font-size:11.5px;color:var(--ink3);width:66px;flex:none}
+.ck .nm{flex:1}
+.ck .val{font-family:var(--mono);font-size:13px;font-weight:700}
+.why{padding:18px 22px;background:var(--paper2);border-top:1px solid var(--line);
+  font-size:14.5px;color:var(--ink2);line-height:1.75}
+.why b{color:var(--cinnabar)}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+  border-top:1px solid var(--line)}
+.nums div{padding:14px 18px;border-right:1px solid var(--line);text-align:center}
+.nums div:last-child{border-right:0}
+.nums .v{font-family:var(--mono);font-size:21px;font-weight:800}
+.nums .l{font-size:11.5px;color:var(--ink3);margin-top:2px}
+
+/* ---------- tables ---------- */
+table{width:100%;border-collapse:collapse;font-size:14px;background:#fff;border:1px solid var(--line)}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--paper2);font-weight:600;font-size:13px;color:var(--ink2)}
+td.m{font-family:var(--mono)}
+tr:last-child td{border-bottom:0}
+.best{color:var(--jade);font-weight:800}
+
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:14px}
+.card{border:1px solid var(--line);background:#fff;overflow:hidden}
+.card img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover}
+.card .b{padding:12px 14px}
+.card .b h4{margin:0 0 3px;font-size:15.5px}
+.card .b p{margin:0;font-size:12.5px;color:var(--ink3);font-family:var(--mono)}
+
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.box{border:1px solid var(--line);background:#fff;padding:20px}
+.box h4{margin:0 0 9px;font-size:16px}
+.box h4 span{color:var(--cinnabar);font-family:var(--mono);font-size:12px;margin-right:8px}
+.box p{margin:0;font-size:14px;color:var(--ink2);line-height:1.72}
+.box.warn{border-left:3px solid var(--amber)}
+pre{background:var(--ink);color:#e8e2d6;padding:16px 18px;overflow-x:auto;
+  font-family:var(--mono);font-size:12.5px;line-height:1.7;border-radius:3px}
+pre .c{color:#8a8178}
+footer{padding:44px 0 62px;color:var(--ink3);font-size:13px;border-top:1px solid var(--line)}
+footer a{color:var(--ink2)}
+.mono{font-family:var(--mono)}
+@media(max-width:720px){
+  h1{font-size:38px}.imgs{grid-template-columns:1fr}
+  nav a:not(.cta){display:none}section{padding:52px 0}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <b>城<em>设</em></b>
+  <a href="#problem">问题</a><a href="#how">怎么做的</a><a href="#demo">验真回放</a>
+  <a href="#proof">校准报告</a><a href="#assets">资产库</a><a href="#limits">局限</a>
+  <span class="sp"></span>
+  <a class="cta" href="#demo">看验真回放 →</a>
+</div></nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="seal">AI + 文创及服务</div>
+  <h1>城设<small>CityBible</small></h1>
+  <p class="tldr">给每一座城市写一本设定集。<br>
+    为城市与县域沉淀可复用的<b>真实</b>文旅素材资产，
+    并让每一条内容在发布前回答一个问题——<b>它拍的地方，现实中真的长这样吗</b>。</p>
+  <div class="kpis" id="kpis"></div>
+  <div class="btns">
+    <a class="btn pri" href="#demo">验真回放</a>
+    <a class="btn" href="#proof">校准报告</a>
+    <a class="btn" href="#how">技术路线</a>
+    <a class="btn" href="#limits">已知局限</a>
+  </div>
+</header>
+
+<section id="problem">
+  <h2><span class="num">01</span>产能已经不是问题了，真实性才是</h2>
+  <p class="lede">AI 把「做出来」的门槛彻底打穿。但文旅内容和别的内容有个根本区别——它拍的是真实存在的地方。</p>
+  <div class="stats">
+    <div class="stat"><div class="n">12.8 万部</div><div class="d">2026 年第一季度全网新增上线微短剧</div></div>
+    <div class="stat"><div class="n">95%+</div><div class="d">其中有 AI 参与制作的内容占比</div></div>
+    <div class="stat"><div class="n">99%</div><div class="d">盲目入局的初创企业陷入亏损</div></div>
+    <div class="stat"><div class="n">2800+</div><div class="d">个县级行政区，多数在网上没有像样的影像</div></div>
+  </div>
+  <p class="quote">「AI 流水线生产造成内容高度同质化，『抽卡式』批量作品流量持续下滑。」</p>
+  <p class="lede" style="margin-bottom:0">所有工具都在解决「怎么生成得更快」。没有一个工具会告诉你：
+    <b>你生成的这个地方，现实中长这样吗</b>。一张看着像、其实不是岳麓书院的图发出去，
+    对文旅局来说就是一次事故。</p>
+</section>
+
+<section id="how">
+  <h2><span class="num">02</span>三轨判定，主判定零大模型</h2>
+  <p class="lede">主判定由 OpenCV 特征点匹配 + RANSAC 几何校验算出。同一输入任意次运行结果完全一致，
+    可复现、可调参、可审计——而且它能指出<b>哪里像</b>，这正是证据链要的东西。</p>
+  <div class="pipe">
+    <div class="node"><div class="t">TRACK 0</div><h4>参考照片库</h4>
+      <p>每个地点沉淀多方位、多时段的真实素材，并登记来源与授权状态。这是判定的地基，也是城市的数字资产。</p></div>
+    <div class="node hi"><div class="t">TRACK 1 · 主判定</div><h4>特征点匹配 + RANSAC</h4>
+      <p>提取关键点 → Lowe's ratio test → RANSAC 几何校验。只有在几何上自洽的匹配才计为内点，重复纹理（砖墙、瓦片、树叶）的误匹配被剔除。</p>
+      <span class="tagz">零 LLM · 可复现</span></div>
+    <div class="node"><div class="t">TRACK 2</div><h4>类文字区域信号</h4>
+      <p>记录画面中类文字区域占比，用于观察水印/贴纸干扰。<b>实测发现该指标在建筑图上不具区分力，已降级为只记录不拦截</b>——详见局限章节。</p>
+      <span class="tagz" style="border-color:var(--amber);color:var(--amber)">已降级</span></div>
+    <div class="node"><div class="t">TRACK 3</div><h4>语义补充</h4>
+      <p>仅当主判定落在灰区时调用多模态模型，产出自然语言解释。双轨分歧则标记 needs_human_review，不硬判。</p></div>
+  </div>
+  <div class="cols" style="margin-top:24px">
+    <div class="box"><h4><span>选型</span>为什么不用 CLIP 余弦相似度</h4>
+      <p>「这张图是不是岳麓书院」属于 instance-level recognition。CLIP 图像 embedding 存在<b>锥效应</b>：任意两张自然图像的余弦值天然落在 0.5–0.9 窄带，绝对阈值失去区分意义。且 CLIP 已知存在 <b>typographic attack</b>——图上贴一张写着目标名称的字条即可抬高相似度，而文旅场景中水印、店招、打卡贴纸极其常见。</p></div>
+    <div class="box"><h4><span>取舍</span>为什么不上向量数据库</h4>
+      <p>Milvus 官方最低要求 8 GB / 4 核，Chroma 官方文档明写不推荐 2 GB 以下部署。而 1 万条 768 维 float32 仅 29.3 MB，numpy 暴力点积单次检索 0.74 ms。在 2 核 2 G 的目标机型上，向量库是纯粹的过度工程。</p></div>
+  </div>
+</section>
+
+<section id="demo">
+  <h2><span class="num">03</span>验真回放</h2>
+  <p class="lede">下面四个用例的判定结果，全部由本仓库的引擎真实跑出，证据图是 <span class="mono">cv2.drawMatches</span> 的原始输出，未经修饰。点任一用例查看。</p>
+  <div class="chips" id="chips"></div>
+  <div class="stage" id="stage"></div>
+</section>
+
+<section id="proof">
+  <h2><span class="num">04</span>裁判校准报告</h2>
+  <p class="lede">难的不是做一个判定器，难的是<b>凭什么信它</b>。我们构造了一个每条样本都埋好真值的校准集，
+    让引擎在上面跑一遍，输出混淆矩阵与内点数分布。门禁的可信度由这份报告兜底。</p>
+  <div class="cols" style="margin-bottom:22px">
+    <div class="box"><h4><span>POS</span>同一物理场景</h4><p>在同一张底图上施加受控的视角变换与光照变换，模拟「换个角度、换个时段再拍一次同一个地方」。这是 HPatches / Oxford-Affine 数据集的标准构造法。真值 = match。</p></div>
+    <div class="box"><h4><span>NEG-A/C</span>不同地点</h4><p>完全异景，以及跨地标——拿甲地的真实照片去冒充乙地。两张都是真素材，但不是同一个地方。真值 = mismatch。</p></div>
+    <div class="box" style="border-left:3px solid var(--cinnabar)"><h4><span>NEG-B</span>AI 重新生成的同名地点</h4><p><b>最关键的一类。</b>用同一段提示词再生成一次「岳麓书院」，人眼看着很像，但它在几何上是一座全新的建筑。文旅内容的事故大多出在这里。真值 = mismatch。</p></div>
+  </div>
+  <div id="calib"></div>
+</section>
+
+<section id="assets">
+  <h2><span class="num">05</span>城市素材资产库</h2>
+  <p class="lede">演示版沉淀了长沙四个地标。每个地点保存多方位参考照，登记来源与授权状态——
+    生产环境中这一层是城市的数字底片，一次沉淀、无限生成。</p>
+  <div class="gal" id="gal"></div>
+</section>
+
+<section id="ai">
+  <h2><span class="num">06</span>对 AI 生态开放</h2>
+  <p class="lede">验真能力以 MCP Server 形态对外开放。任何支持 MCP 的 Agent 填一个 URL 即可调用，
+    我们不为任何一家平台写适配代码。</p>
+  <pre><span class="c"># 任意 MCP 客户端接入，一条命令</span>
+claude mcp add --transport http citybible https://&lt;your-host&gt;/mcp \
+  --header "Authorization: Bearer $CITYBIBLE_KEY"
+
+<span class="c"># 或直接用 CLI（断网场景的降级路径）</span>
+citybible verify ./photo.jpg --claim "岳麓书院" --format json</pre>
+  <div class="cols" style="margin-top:18px">
+    <div class="box"><h4><span>TOOL</span>verify_geo_fidelity</h4><p>校验一张图里的地点是否真实存在且相符，返回 verdict / confidence / 证据链。默认返回摘要（约 200 token），需要证据时才返回完整体。</p></div>
+    <div class="box"><h4><span>TOOL</span>query_city_asset</h4><p>查询某城某主题下可用的真实素材、参考影像及其授权状态。</p></div>
+    <div class="box"><h4><span>TOOL</span>list_landmarks</h4><p>列出资产库中已收录的地点及其参考照数量。</p></div>
+  </div>
+</section>
+
+<section id="limits">
+  <h2><span class="num">07</span>已知局限</h2>
+  <p class="lede">下面几条是实测中确实存在的问题，写在这里而不是藏起来。</p>
+  <div class="cols">
+    <div class="box warn"><h4><span>01</span>正样本是合成的，不是实拍</h4>
+      <p>校准集的正样本由受控几何/光照变换构造，几何对应关系是<b>精确</b>的。真实世界的二次拍摄更难：不同相机、季节变化、人群遮挡、建筑改造都会降低内点数。因此这份报告证明的是<b>方法在受控条件下分离度极大、阈值不敏感</b>，而不是「在真实实拍上准确率 100%」。后者需要真实多时段实拍数据，属后续工作。</p></div>
+    <div class="box warn"><h4><span>02</span>类文字检测器不具区分力</h4>
+      <p>实测：干净建筑照的类文字区域占比天然在 0.1%–15.2%（屋瓦、梁枋、栏杆的水平重复纹理被误判为文字行），而人工贴上打卡水印后仅从 4.08% 升至 9.12%，落在正常范围内部。<b>该指标无法区分两者，已从门禁降级为信息性信号。</b>真正拦截水印需接入专业 OCR。</p></div>
+    <div class="box warn"><h4><span>03</span>依赖参考照片库的覆盖度</h4>
+      <p>系统只能验证「库里有的地方」。参考库的方位/时段覆盖不足时，真实照片也可能被判为 mismatch。工程上唯一有效的提升手段是扩大参考库覆盖：每地点至少 4 方位 × 3 时段 × 2 季节。</p></div>
+    <div class="box warn"><h4><span>04</span>到店归因尚未接入真实数据</h4>
+      <p>归因链路（播放 → 搜索 → 加入行程 → 到访 → 核销）的架构已设计，但演示阶段没有真实核销数据，相关数字为占位。<b>本页不展示归因看板</b>，以免与真实跑出的判定结果混淆。</p></div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <b>城设 CityBible</b> · 智极松 AI Skillathon · AI+文创及服务赛道<br>
+  本页所有判定结果与证据图由仓库内引擎真实跑出，可通过 <span class="mono">python3 eval/calibrate.py</span> 复现。<br>
+  演示素材全部由 AI 生成，不含任何第三方版权图片。<br>
+  <span class="mono" id="bt"></span>
+</div></footer>
+
+</div>
+
+<script>
+const D = {"cases": [{"id": "pos_yuelu", "title": "同一地点·另一时段拍摄", "subtitle": "岳麓书院 · 黄昏光线 + 视角位移 + 平台压缩", "claim": "岳麓书院", "expect": "match", "why": "真实世界里同一个地方的两次拍摄。光线、角度、画质都变了，但建筑的物理结构点没变，所以内点数极高。", "verdict": "match", "confidence": 0.99, "inliers": 2355, "inlier_ratio": 0.9945, "good_matches": 2368, "keypoints_query": 4000, "keypoints_reference": 4000, "elapsed_ms": 369.5, "checkpoints": [{"id": "GEO-01", "name": "特征点内点数", "level": "P0", "value": 2355, "threshold": ">= 22", "passed": true}, {"id": "GEO-02", "name": "内点率", "level": "P1", "value": 0.9945, "threshold": ">= 0.12", "passed": true}, {"id": "GEO-03", "name": "单应矩阵可解", "level": "P0", "value": true, "threshold": "== True", "passed": true}, {"id": "GEO-04", "name": "类文字区域占比（信息性，不参与门禁）", "level": "INFO", "value": 0.0454, "threshold": "n/a（该指标在建筑图上不具区分力，见 VerifyConfig 注释）", "passed": null}], "best_reference": "yuelu_academy_ref1.jpg", "media": {"candidate": "media/pos_yuelu_cand.jpg", "reference": "media/pos_yuelu_ref.jpg", "evidence": "media/pos_yuelu_evidence.jpg"}, "correct": true}, {"id": "neg_ai_yuelu", "title": "AI 重新生成的「岳麓书院」", "subtitle": "同一段提示词再生成一次 · 人眼看着很像", "claim": "岳麓书院", "expect": "mismatch", "why": "这是整套系统最重要的一个用例。AI 每次生成的「岳麓书院」都是一座全新的建筑——看着像，但它在几何上和真实的岳麓书院毫无对应关系。内点数与一个完全不相干的地方处在同一量级。发出去就是一次文旅事故。", "verdict": "mismatch", "confidence": 0.715, "inliers": 5, "inlier_ratio": 0.3846, "good_matches": 13, "keypoints_query": 4000, "keypoints_reference": 4000, "elapsed_ms": 326.5, "checkpoints": [{"id": "GEO-01", "name": "特征点内点数", "level": "P0", "value": 5, "threshold": ">= 22", "passed": false}, {"id": "GEO-02", "name": "内点率", "level": "P1", "value": 0.3846, "threshold": ">= 0.12", "passed": true}, {"id": "GEO-03", "name": "单应矩阵可解", "level": "P0", "value": true, "threshold": "== True", "passed": true}, {"id": "GEO-04", "name": "类文字区域占比（信息性，不参与门禁）", "level": "INFO", "value": 0.1506, "threshold": "n/a（该指标在建筑图上不具区分力，见 VerifyConfig 注释）", "passed": null}], "best_reference": "yuelu_academy_ref2.jpg", "media": {"candidate": "media/neg_ai_yuelu_cand.jpg", "reference": "media/neg_ai_yuelu_ref.jpg", "evidence": "media/neg_ai_yuelu_evidence.jpg"}, "correct": true}, {"id": "neg_desert", "title": "张冠李戴·完全异景", "subtitle": "西北荒漠烽火台 · 却被声称是天心阁", "claim": "天心阁", "expect": "mismatch", "why": "最直白的一类造假。系统给出接近零的内点数，且在证据图上找不到任何一条几何自洽的连线。", "verdict": "mismatch", "confidence": 0.715, "inliers": 5, "inlier_ratio": 0.4545, "good_matches": 11, "keypoints_query": 3911, "keypoints_reference": 4000, "elapsed_ms": 250.8, "checkpoints": [{"id": "GEO-01", "name": "特征点内点数", "level": "P0", "value": 5, "threshold": ">= 22", "passed": false}, {"id": "GEO-02", "name": "内点率", "level": "P1", "value": 0.4545, "threshold": ">= 0.12", "passed": true}, {"id": "GEO-03", "name": "单应矩阵可解", "level": "P0", "value": true, "threshold": "== True", "passed": true}, {"id": "GEO-04", "name": "类文字区域占比（信息性，不参与门禁）", "level": "INFO", "value": 0.005, "threshold": "n/a（该指标在建筑图上不具区分力，见 VerifyConfig 注释）", "passed": null}], "best_reference": "tianxin_tower_ref2.jpg", "media": {"candidate": "media/neg_desert_cand.jpg", "reference": "media/neg_desert_ref.jpg", "evidence": "media/neg_desert_evidence.jpg"}, "correct": true}, {"id": "neg_cross", "title": "跨地标·拿甲地的实照冒充乙地", "subtitle": "太平老街实照 · 却被声称是岳麓书院", "claim": "岳麓书院", "expect": "mismatch", "why": "两张都是真实素材，但不是同一个地方。这一关考的是系统到底有没有在比对场景，而不是在比对「风格像不像」。", "verdict": "mismatch", "confidence": 0.715, "inliers": 5, "inlier_ratio": 0.4167, "good_matches": 12, "keypoints_query": 4000, "keypoints_reference": 4000, "elapsed_ms": 273.1, "checkpoints": [{"id": "GEO-01", "name": "特征点内点数", "level": "P0", "value": 5, "threshold": ">= 22", "passed": false}, {"id": "GEO-02", "name": "内点率", "level": "P1", "value": 0.4167, "threshold": ">= 0.12", "passed": true}, {"id": "GEO-03", "name": "单应矩阵可解", "level": "P0", "value": true, "threshold": "== True", "passed": true}, {"id": "GEO-04", "name": "类文字区域占比（信息性，不参与门禁）", "level": "INFO", "value": 0.0254, "threshold": "n/a（该指标在建筑图上不具区分力，见 VerifyConfig 注释）", "passed": null}], "best_reference": "yuelu_academy_ref2.jpg", "media": {"candidate": "media/neg_cross_cand.jpg", "reference": "media/neg_cross_ref.jpg", "evidence": "media/neg_cross_evidence.jpg"}, "correct": true}], "landmarks": [{"id": "yuelu_academy", "name": "岳麓书院", "img": "media/lm_yuelu_academy.jpg", "refs": 2}, {"id": "orange_isle", "name": "橘子洲", "img": "media/lm_orange_isle.jpg", "refs": 2}, {"id": "tianxin_tower", "name": "天心阁", "img": "media/lm_tianxin_tower.jpg", "refs": 2}, {"id": "taiping_street", "name": "太平老街", "img": "media/lm_taiping_street.jpg", "refs": 2}], "calib": {"generated_at": "2026-07-25 23:32:27", "n": 68, "runs": [{"detector": "AKAZE", "cm": {"TP": 48, "FP": 0, "FN": 0, "TN": 20}, "metrics": {"precision": 1.0, "recall": 1.0, "f1": 1.0, "accuracy": 1.0, "false_negative_rate_误杀": 0.0, "false_positive_rate_漏放": 0.0}, "latency": 493.3, "dist": {"POS": {"n": 48, "min": 460, "max": 4763, "mean": 2163.7}, "NEG-B": {"n": 4, "min": 4, "max": 5, "mean": 4.8}, "NEG-A": {"n": 4, "min": 4, "max": 6, "mean": 4.8}, "NEG-C": {"n": 12, "min": 4, "max": 6, "mean": 4.9}}}, {"detector": "ORB", "cm": {"TP": 48, "FP": 0, "FN": 0, "TN": 20}, "metrics": {"precision": 1.0, "recall": 1.0, "f1": 1.0, "accuracy": 1.0, "false_negative_rate_误杀": 0.0, "false_positive_rate_漏放": 0.0}, "latency": 254.4, "dist": {"POS": {"n": 48, "min": 1393, "max": 2847, "mean": 2239.0}, "NEG-B": {"n": 4, "min": 4, "max": 6, "mean": 4.8}, "NEG-A": {"n": 4, "min": 5, "max": 5, "mean": 5.0}, "NEG-C": {"n": 12, "min": 4, "max": 8, "mean": 5.0}}}, {"detector": "SIFT", "cm": {"TP": 48, "FP": 0, "FN": 0, "TN": 20}, "metrics": {"precision": 1.0, "recall": 1.0, "f1": 1.0, "accuracy": 1.0, "false_negative_rate_误杀": 0.0, "false_positive_rate_漏放": 0.0}, "latency": 2644.0, "dist": {"POS": {"n": 48, "min": 1122, "max": 7701, "mean": 3994.9}, "NEG-B": {"n": 4, "min": 5, "max": 7, "mean": 5.8}, "NEG-A": {"n": 4, "min": 4, "max": 8, "mean": 6.8}, "NEG-C": {"n": 12, "min": 5, "max": 15, "mean": 8.0}}}]}, "built_at": "2026-07-25 23:38"};
+
+/* ---------- KPI ---------- */
+(function(){
+  const best = D.calib.runs.reduce((a,b)=> b.metrics.f1>=a.metrics.f1 && b.latency<a.latency ? b : a);
+  const pos = best.dist.POS, negs = ["NEG-A","NEG-B","NEG-C"].map(k=>best.dist[k]).filter(Boolean);
+  const negMax = Math.max(...negs.map(n=>n.max));
+  const sep = Math.round(pos.min/Math.max(negMax,1));
+  const k = [
+    [ (best.metrics.accuracy*100).toFixed(0)+"%", "校准集准确率（"+D.calib.n+" 条埋真值样本）"],
+    [ sep+"×", "正负样本内点数分离倍数（最坏情况）"],
+    [ Math.round(best.latency)+" ms", "单次判定平均耗时（2 核 CPU，"+best.detector+"）"],
+    [ "0", "大模型调用次数（主判定链路）"],
+  ];
+  document.getElementById("kpis").innerHTML = k.map(([v,l])=>
+    `<div class="kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+})();
+
+/* ---------- demo ---------- */
+const chips=document.getElementById("chips"), stage=document.getElementById("stage");
+chips.innerHTML = D.cases.map((c,i)=>
+  `<div class="chip${i===0?' on':''}" data-i="${i}">${c.title}</div>`).join("");
+
+function render(i){
+  const c = D.cases[i];
+  const vc = c.verdict==="match" ? "match" : "mismatch";
+  const vtext = c.verdict==="match" ? "✓ 通过 · MATCH" :
+                c.verdict==="mismatch" ? "✕ 打回 · MISMATCH" : "⚠ 转人工复核";
+  stage.innerHTML = `
+   <div class="stage-head">
+     <div><h3>${c.title}</h3><div class="sub">${c.subtitle}　·　声称地点：${c.claim}</div></div>
+     <div class="verdict ${vc}" id="vd">${vtext}</div>
+   </div>
+   <div class="imgs">
+     <figure><figcaption>参考照片库</figcaption><img src="${c.media.reference}" alt="参考照片"></figure>
+     <figure id="cf" class="scanning"><figcaption>待验图</figcaption>
+       <img src="${c.media.candidate}" alt="待验图"><div class="scan"></div></figure>
+   </div>
+   <div class="nums">
+     <div><div class="v">${c.keypoints_query}</div><div class="l">待验图关键点</div></div>
+     <div><div class="v">${c.good_matches}</div><div class="l">通过 ratio test</div></div>
+     <div><div class="v" style="color:${vc==='match'?'var(--jade)':'var(--cinnabar)'}">${c.inliers}</div><div class="l">RANSAC 内点数</div></div>
+     <div><div class="v">${(c.inlier_ratio*100).toFixed(1)}%</div><div class="l">内点率</div></div>
+     <div><div class="v">${c.elapsed_ms}</div><div class="l">耗时 ms</div></div>
+   </div>
+   <div class="checks" id="cks">${c.checkpoints.map(k=>{
+      const cls = k.passed===true?'p':(k.passed===false?'f':'i');
+      return `<div class="ck"><span class="dot ${cls}"></span><span class="id">${k.id}</span>
+        <span class="nm">${k.name}</span><span class="val">${k.value}</span></div>`;}).join("")}
+   </div>
+   ${c.media.evidence?`<div class="evi"><img src="${c.media.evidence}" alt="匹配点连线证据图">
+     <div class="cap">证据图 · cv2.drawMatches 原始输出　左：待验图　右：参考照　绿线为 RANSAC 内点</div></div>`:""}
+   <div class="why">${c.why.replace(/「([^」]+)」/g,'<b>「$1」</b>')}</div>`;
+  const cks=[...stage.querySelectorAll(".ck")];
+  setTimeout(()=>document.getElementById("vd").classList.add("show"),1250);
+  cks.forEach((el,n)=>setTimeout(()=>el.classList.add("on"),1400+n*130));
+}
+chips.addEventListener("click",e=>{
+  const t=e.target.closest(".chip"); if(!t) return;
+  chips.querySelectorAll(".chip").forEach(x=>x.classList.remove("on"));
+  t.classList.add("on"); render(+t.dataset.i);
+});
+render(0);
+
+/* ---------- calibration ---------- */
+(function(){
+  const r=D.calib.runs;
+  const fastest=r.reduce((a,b)=>b.latency<a.latency?b:a);
+  let h=`<table><thead><tr><th>检测器</th><th>TP</th><th>FP</th><th>FN</th><th>TN</th>
+    <th>查准率</th><th>查全率</th><th>F1</th><th>误杀率</th><th>漏放率</th><th>平均耗时</th></tr></thead><tbody>`;
+  r.forEach(x=>{const b=x.detector===fastest.detector;
+    h+=`<tr><td class="m"><b>${x.detector}</b>${b?' <span class="best">← 默认</span>':''}</td>
+    <td class="m">${x.cm.TP}</td><td class="m">${x.cm.FP}</td><td class="m">${x.cm.FN}</td><td class="m">${x.cm.TN}</td>
+    <td class="m">${x.metrics.precision.toFixed(3)}</td><td class="m">${x.metrics.recall.toFixed(3)}</td>
+    <td class="m ${x.metrics.f1===1?'best':''}">${x.metrics.f1.toFixed(3)}</td>
+    <td class="m">${x.metrics["false_negative_rate_误杀"].toFixed(3)}</td>
+    <td class="m">${x.metrics["false_positive_rate_漏放"].toFixed(3)}</td>
+    <td class="m">${x.latency.toFixed(0)} ms</td></tr>`;});
+  h+=`</tbody></table>`;
+
+  h+=`<p class="lede" style="margin:26px 0 12px">各类样本的内点数分布——这张表说明阈值的选择并不精细：
+      正负之间隔着一到两个数量级，任何落在中间的阈值给出的结果都一样。</p>
+      <table><thead><tr><th>检测器</th><th>样本类</th><th>数量</th><th>最小内点</th><th>平均</th><th>最大</th></tr></thead><tbody>`;
+  const nm={POS:"POS 同一物理场景",'NEG-A':"NEG-A 完全异景",'NEG-B':"NEG-B AI 重生成同名地点",'NEG-C':"NEG-C 跨地标冒充"};
+  r.forEach(x=>Object.keys(nm).forEach((k,i)=>{const d=x.dist[k]; if(!d)return;
+    h+=`<tr><td class="m">${i===0?x.detector:''}</td><td${k==='NEG-B'?' style="color:var(--cinnabar);font-weight:600"':''}>${nm[k]}</td>
+      <td class="m">${d.n}</td><td class="m"><b>${d.min}</b></td><td class="m">${d.mean}</td><td class="m">${d.max}</td></tr>`;}));
+  h+=`</tbody></table>
+    <p class="lede" style="margin-top:20px">校准集共 <b>${D.calib.n}</b> 条，生成于 ${D.calib.generated_at}。
+    完整逐条记录见仓库 <span class="mono">eval/calibration_report.json</span>，
+    运行 <span class="mono">python3 eval/calibrate.py</span> 可完全复现。</p>`;
+  document.getElementById("calib").innerHTML=h;
+})();
+
+/* ---------- gallery ---------- */
+document.getElementById("gal").innerHTML = D.landmarks.map(l=>
+  `<div class="card"><img src="${l.img}" alt="${l.name}" loading="lazy">
+   <div class="b"><h4>${l.name}</h4><p>${l.refs} 张参考照 · AI 生成 · 自有版权</p></div></div>`).join("");
+
+document.getElementById("bt").textContent = "构建于 " + D.built_at;
+</script>
+</body>
+</html>
