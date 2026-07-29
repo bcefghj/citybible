@@ -62,6 +62,15 @@ h1 small{display:block;font-size:17px;letter-spacing:7px;color:var(--ink3);
 .btn.pri{background:var(--cinnabar);border-color:var(--cinnabar);color:#fff}
 .btn.pri:hover{background:#8d2822}
 
+/* ---------- demo video ---------- */
+.video-wrap{border:1px solid var(--line);background:#111;overflow:hidden;margin-top:8px}
+.video-wrap video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000;vertical-align:top}
+.video-meta{display:flex;flex-wrap:wrap;gap:14px 22px;padding:14px 18px;background:var(--paper2);
+  border:1px solid var(--line);border-top:0;font-size:13px;color:var(--ink2)}
+.video-meta a{color:var(--cinnabar);text-decoration:none}
+.video-meta a:hover{text-decoration:underline}
+.video-meta .sep{color:var(--ink3)}
+
 /* ---------- problem ---------- */
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;
   border:1px solid var(--line);background:var(--paper2)}
@@ -170,10 +179,10 @@ footer a{color:var(--ink2)}
 
 <nav><div class="wrap">
   <b>城<em>设</em></b>
-  <a href="#problem">问题</a><a href="#how">怎么做的</a><a href="#demo">验真回放</a>
+  <a href="#video">演示视频</a><a href="#problem">问题</a><a href="#how">怎么做的</a><a href="#demo">验真回放</a>
   <a href="#proof">校准报告</a><a href="#assets">资产库</a><a href="#limits">局限</a>
   <span class="sp"></span>
-  <a class="cta" href="#demo">看验真回放 →</a>
+  <a class="cta" href="#video">看演示视频 →</a>
 </div></nav>
 
 <div class="wrap">
@@ -186,12 +195,32 @@ footer a{color:var(--ink2)}
     并让每一条内容在发布前回答一个问题——<b>它拍的地方，现实中真的长这样吗</b>。</p>
   <div class="kpis" id="kpis"></div>
   <div class="btns">
-    <a class="btn pri" href="#demo">验真回放</a>
+    <a class="btn pri" href="#video">演示视频</a>
+    <a class="btn" href="#demo">验真回放</a>
     <a class="btn" href="#proof">校准报告</a>
-    <a class="btn" href="#how">技术路线</a>
-    <a class="btn" href="#limits">已知局限</a>
+    <a class="btn" href="https://github.com/bcefghj/citybible" target="_blank" rel="noopener">GitHub</a>
   </div>
 </header>
+
+<section id="video">
+  <h2><span class="num">00</span>87 秒看懂城设</h2>
+  <p class="lede">画面全部为真实运行：Playwright 录展示页、CLI 真实 stdout 回放。真实运行画面约占全片 70%，旁白与字幕对齐关键数值（内点 2355、打回 MISMATCH）。</p>
+  <div class="video-wrap">
+    <video controls playsinline preload="metadata" poster=""
+      src="media/demo.mp4"
+      title="城设 CityBible 演示视频">
+      您的浏览器不支持 video 标签，请
+      <a href="media/demo.mp4" download>下载 MP4</a> 观看。
+    </video>
+  </div>
+  <div class="video-meta">
+    <span>1920×1080 · H.264 · 约 87 秒 · 13 MB</span>
+    <span class="sep">·</span>
+    <a href="media/demo.mp4" download="城设CityBible_演示视频.mp4">下载视频</a>
+    <span class="sep">·</span>
+    <a href="https://github.com/bcefghj/citybible/blob/master/docs/%E5%9F%8E%E8%AE%BECityBible_%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91.mp4" target="_blank" rel="noopener">在 GitHub 查看</a>
+  </div>
+</section>
 
 <section id="problem">
   <h2><span class="num">01</span>产能已经不是问题了，真实性才是</h2>

@@ -8,10 +8,11 @@
 
 <p align="center">
   <a href="http://47.119.112.225/citybible/"><b>在线体验</b></a> ·
+  <a href="http://47.119.112.225/citybible/#video"><b>演示视频</b></a> ·
+  <a href="docs/城设CityBible_演示视频.mp4">下载 MP4</a> ·
   <a href="docs/交付总文档.md">交付总文档</a> ·
   <a href="eval/calibration_report.json">校准报告</a> ·
-  <a href="engine/verify.py">判定引擎</a> ·
-  <a href="docs/演示视频脚本.md">演示视频脚本</a>
+  <a href="engine/verify.py">判定引擎</a>
 </p>
 
 <p align="center">
@@ -51,6 +52,16 @@
 但文旅内容和别的内容有一个根本区别——**它拍的是真实存在的地方**。一张看着像、其实不是岳麓书院的图发出去，对文旅局来说就是一次可被公众核查的事故。
 
 所有工具都在解决「怎么生成得更快」。**城设解决的是：你生成的这个地方，现实中长这样吗。**
+
+### 演示视频（87 秒）
+
+| 入口 | 链接 |
+|---|---|
+| 在线播放 | http://47.119.112.225/citybible/#video |
+| 直链 MP4 | http://47.119.112.225/citybible/media/demo.mp4 |
+| 仓库内文件 | [`docs/城设CityBible_演示视频.mp4`](docs/城设CityBible_演示视频.mp4) |
+
+画面全部为真实运行（Playwright 录展示页 + CLI 真实 stdout），真实运行画面约占 70%；旁白 MiniMax speech-2.6-hd，硬字幕，无 BGM。
 
 | 模块 | 状态 | 说明 |
 |---|---|---|
